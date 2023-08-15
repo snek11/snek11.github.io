@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+
+    <!-- Add Bootstrap for styling -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    
+    <!-- AOS library for animations -->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #2C3E50;
+        }
+
+        header {
+            background-color: #18BC9C;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        img.profile-pic {
+            width: 500px; /* increased size */
+            height: 500px; /* added to maintain a square aspect ratio */
+            border-radius: 50%;
+            margin-bottom: 20px;
+            object-fit: cover; /* this ensures the image is properly resized within its container */
+        }
+
+        section {
+            padding: 50px 0;
+        }
+
+        a {
+            color: #18BC9C;
+        }
+
+        .project-card {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div>
+        <img src="IMG_1490.jpg" alt="Profile Picture" class="profile-pic">
+        <h1>This is me, Sneha</h1>
+        <p>I am JODHAA for my brother, you can fondly call me DUMBO</p>
+    </div>
+</header>
+
+<section class="container">
+    <h2 data-aos="fade-up">About Me</h2>
+    <p data-aos="fade-up" data-aos-delay="100">
+        A passionate professional in [Your Field], I've journeyed through the realms of design, development, and strategy, creating solutions that are intuitive, impactful, and user-friendly.
+    </p>
+
+    <h2 data-aos="fade-up">Skills</h2>
+    <ul data-aos="fade-up" data-aos-delay="150">
+        <li>Web Development</li>
+        <li>UI/UX Design</li>
+        <li>Project Management</li>
+        <li>Data Analysis</li>
+    </ul>
+
+    <h2 data-aos="fade-up">My Projects</h2>
+    <div class="row">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-card">
+                <img src="path_to_project_image1.jpg" alt="Project 1" class="img-fluid">
+                <h3>Project Name 1</h3>
+                <p>Short description of the project. What it entails, what was your role, etc.</p>
+            </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="250">
+            <div class="project-card">
+                <img src="path_to_project_image2.jpg" alt="Project 2" class="img-fluid">
+                <h3>Project Name 2</h3>
+                <p>Short description of the project. What it entails, what was your role, etc.</p>
+            </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="project-card">
+                <img src="path_to_project_image3.jpg" alt="Project 3" class="img-fluid">
+                <h3>Project Name 3</h3>
+                <p>Short description of the project. What it entails, what was your role, etc.</p>
+            </div>
+        </div>
+    </div>
+
+    <h2 data-aos="fade-up">Contact</h2>
+    <p data-aos="fade-up" data-aos-delay="350">
+        Have a project in mind? Let's collaborate and make something amazing! Drop me a message at <a href="mailto:your_email@example.com">your_email@example.com</a>
+    </p>
+</section>
+
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script>
+    AOS.init();
+</script>
+
+</body>
+</html>
